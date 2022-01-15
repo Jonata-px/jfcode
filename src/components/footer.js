@@ -38,7 +38,7 @@ export default function Footer() {
               <li><Link onClick={()=>autoScroll("sobre")} to="">Agência</Link></li>
               <li><p className="p-link" onClick={()=>autoScroll("contato")}>Contato</p></li>
             </ul>
-            <ul>
+            <ul className="footer-contato">
               <h4>Contato</h4>
               <div className="contato-info-single contato-info-single-local">
                 <FaMapMarkerAlt/>
@@ -46,7 +46,7 @@ export default function Footer() {
                 em todo Brasil</p>
               </div>
               <div className="contato-info-single">
-                <a href="tel:+556496459874"><FaPhoneAlt/> (64) 9645-9874</a>
+                <a href="tel:+556484253732"><FaPhoneAlt/> (64) 8425-3732</a>
               </div>
               <div className="contato-info-single">
                 <a href="mailto:contato@jfcode.com.br"><FaEnvelope/> contato@jfcode.com.br</a>

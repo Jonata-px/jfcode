@@ -8,16 +8,17 @@ export default function Header() {
 
   var body = document.querySelector('html');
 
-  const openMenu = (resize = false)=>{
+  const openMenu = (resize = false,close = false)=>{
     let menu = document.querySelector("ul.menu");
     let menuIco = document.querySelector(".menu-ico svg");
-    if(menu.style.height !== '160px'){
+    if(menu.style.height !== '160px' && !resize && !close) {
       menu.style.height = '160px';
-      // menu.style.paddingTop = '20px';
       menuIco.style.color = '#576ef2';
     }else if(!resize){
       menu.style.height = '0';
-      // menu.style.paddingTop = '0';
+      menuIco.style.color = '#0c2091';
+    }else{
+      menu.style.height = 'auto';
       menuIco.style.color = '#0c2091';
     }
   }
@@ -35,6 +36,8 @@ export default function Header() {
   window.onresize = ()=>{
     if(window.innerWidth > '768')
       openMenu(true);
+      else
+      openMenu(false,true);
   }
 
   const getScroll = ()=>{
@@ -48,8 +51,8 @@ export default function Header() {
         paralaxB.forEach(async(val,index)=>{
           var alturaDiv = paralaxB[index].offsetHeight;
           var distanciaTopo = paralaxB[index].offsetTop;
-          if(parseInt(alturaScroll + alturaJanela) >= distanciaTopo && parseInt(alturaScroll) < (distanciaTopo + alturaDiv)){
-            let time = ""+index+10;
+          if(parseInt(alturaScroll + alturaJanela) >= distanciaTopo && parseInt(alturaScroll) < (distanciaTopo + alturaDiv) && paralaxB[index].style.opacity !== 1){
+            let time = ""+index+90;
             setTimeout(()=>{
               paralaxB[index].style.opacity = 1;
               paralaxB[index].style.bottom = 0;
@@ -88,6 +91,11 @@ export default function Header() {
     body.scrollTop = body.scrollTop + 1;
   },[])
 
+  window.onload = ()=>{
+    getScroll();
+    body.scrollTop = body.scrollTop + 1;
+  }
+
     return (
       <header>
         <div className="container">
@@ -103,7 +111,7 @@ export default function Header() {
               <li><p className="p-link" onClick={()=>autoScroll("contato")} id="header-contato">Contato</p></li>
             </ul>
             <div className="whatsApp">
-              <a href="https://api.whatsapp.com/send?phone=556496459874&text=Olá, gostaria de fazer um orçamento" title="WhatsApp" ><FaWhatsapp /> WhatsApp</a>
+              <a href="https://api.whatsapp.com/send?phone=556484253732&text=Olá, gostaria de fazer um orçamento " title="WhatsApp" ><FaWhatsapp /> WhatsApp</a>
             </div>
           </nav>
         </div>

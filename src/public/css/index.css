@@ -237,6 +237,14 @@ footer ul{
   text-align: center;
 }
 
+footer ul.footer-contato{
+  text-align:left;
+}
+
+.footer-contato h4{
+  text-align:center;
+}
+
 footer ul h4{
   margin-bottom:10px;
 }
@@ -267,6 +275,11 @@ footer ul .contato-info-single p{
 
 footer ul .contato-info-single svg{
   min-width:20px;
+}
+
+footer .contato-info-single{
+  margin: 0 auto;
+  max-width: 200px;
 }
 
 footer small{
@@ -422,7 +435,7 @@ footer small{
     margin:0 auto;
   }
 
-  footer ul:last-child{
+  footer ul{
     margin-top: 20px;
   }
 }

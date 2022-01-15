@@ -9,7 +9,7 @@ export default function Apis() {
             <h1>Integrações e API's</h1>
             <p>Necessita utilizar meios de pagamento em sua plataforma? Não se preocupe, nós integramos gateways de pagamentos e muitos outros diversos serviços de APIs!</p>
             <div className="service-info-wrap">
-              <div className="info-service">
+              <div className="info-service paralax-right">
                 <div className="service-info-single">
                   <h2><img src={IcoChecked} alt="checked" /> Gateways de pagamento</h2>
                   <p>Nós integramos várias soluções de pagamento que estão na internet.</p>
@@ -23,29 +23,29 @@ export default function Apis() {
                   <p>Precisa integrar sua plataforma com soluções externas? Deixe com a gente!</p>
                 </div>
               </div>
-              <img src={Banner} alt="Hospedagem e domínio" />
+              <img src={Banner} alt="Hospedagem e domínio" className="paralax-left" />
             </div>
           </div>
           <div className="service-tec">
             <h1>Tecnologias que utilizamos</h1>
             <div className="service-tec-wrap">
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>JavaScript</h2>
               </div>
 
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>Node.js</h2>
               </div>
 
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>Socket.io</h2>
               </div>
 
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>GoogleCloud</h2>
               </div>
 
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>AWS</h2>
               </div>
               

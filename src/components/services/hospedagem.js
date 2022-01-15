@@ -10,7 +10,7 @@ export default function Hospedagem() {
             <p>Não possui experiencia técnica? Deixe conosco,<br/>
             nós deixamos tudo preparado para você!</p>
             <div className="service-info-wrap">
-              <div className="info-service">
+              <div className="info-service paralax-right">
                 <div className="service-info-single">
                   <h2><img src={IcoChecked} alt="checked" /> Hospedagem</h2>
                   <p>Nós oferecemos serviço de hospedagem em nossos servidores.</p>
@@ -25,17 +25,17 @@ export default function Hospedagem() {
                   <p>desenvolveu sua solução com a gente? Você ganha um domínio gratuito. <span>Somente para clientes que desenvolveram com a gente.</span></p>
                 </div>
               </div>
-              <img src={Banner} alt="Hospedagem e domínio" />
+              <img src={Banner} alt="Hospedagem e domínio" className="paralax-left" />
             </div>
           </div>
           <div className="service-tec">
             <h1>Tecnologias que utilizamos</h1>
             <div className="service-tec-wrap">
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>AWS</h2>
               </div>
 
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>Google Cloud Platform</h2>
               </div>
           

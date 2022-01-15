@@ -9,7 +9,7 @@ export default function UiUx() {
             <h1>UI/UX</h1>
             <p>Tenha a melhor sensação ao utilizar nossas soluções de desenvolvimento. Interfaces interativas, simplificadas e modernas.</p>
             <div className="service-info-wrap">
-              <div className="info-service">
+              <div className="info-service paralax-right">
                 <div className="service-info-single">
                   <h2><img src={IcoChecked} alt="checked" /> Interfaces modernas</h2>
                   <p>Layouts modernos e bem planejados para sua solução de software, que aumentarão a produtividade.</p>
@@ -23,21 +23,21 @@ export default function UiUx() {
                   <p>Deixaremos tudo que for necessário para você trabalhar diretamente em suas mãos, sob medida e com fluidez.</p>
                 </div>
               </div>
-              <img src={Banner} alt="Hospedagem e domínio" />
+              <img src={Banner} alt="Hospedagem e domínio" className="paralax-left" />
             </div>
           </div>
           <div className="service-tec">
             <h1>Tecnologias que utilizamos</h1>
             <div className="service-tec-wrap">
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>React</h2>
               </div>
 
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>JavaScript</h2>
               </div>
 
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>Visual Studio</h2>
               </div>
               

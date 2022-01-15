@@ -9,7 +9,7 @@ export default function Contrato() {
             <h1>Pagamento e contrato</h1>
             <p>Aceitamos pagamentos com cartão de crédito (à vista e parcelado), boleto, recorrência, PIX. E para sua segurança, trabalhamos com contrato de prestação de serviço (digital).</p>
             <div className="service-info-wrap">
-              <div className="info-service">
+              <div className="info-service paralax-right">
                 <div className="service-info-single">
                   <h2><img src={IcoChecked} alt="checked" /> À vista</h2>
                   <p>Cartão de crédito e débito, boleto, PIX, recorrência.</p>
@@ -23,7 +23,7 @@ export default function Contrato() {
                   <p>Para a sua maior segurança, trabalhamos sob contrato, podendo ser assinado digitalmente.</p>
                 </div>
               </div>
-              <img src={Banner} alt="Hospedagem e domínio" />
+              <img src={Banner} alt="Hospedagem e domínio" className="paralax-left" />
             </div>
           </div>
          

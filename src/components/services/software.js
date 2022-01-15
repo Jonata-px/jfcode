@@ -9,7 +9,7 @@ export default function Software() {
             <h1>Desenvolvimento de software</h1>
             <p>Nós transformaremos sua ideia em realidade.<br/> crie o seu software de acordo com sua necessidade Sites, aplicativos, sistemas WEB e desktop</p>
             <div className="service-info-wrap">
-              <div className="info-service">
+              <div className="info-service paralax-right">
                 <div className="service-info-single">
                   <h2><img src={IcoChecked} alt="checked" /> App</h2>
                   <p>Aplicativos híbridos e nativos. Com layout moderno e alta performance.</p>
@@ -23,66 +23,66 @@ export default function Software() {
                   <p>Desenvolvemos as melhores soluções para todos os sistemas operacionais (Windows | Linux | Mac)</p>
                 </div>
               </div>
-              <img src={Banner} alt="Hospedagem e domínio" />
+              <img src={Banner} alt="Hospedagem e domínio" className="paralax-left" />
             </div>
           </div>
           <div className="service-tec">
             <h1>Tecnologias que utilizamos</h1>
             <div className="service-tec-wrap">
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>JavaScript</h2>
               </div>
 
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>Node.js</h2>
               </div>
 
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>Apache</h2>
               </div>
 
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>MongoDB</h2>
               </div>
               
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>MySql</h2>
               </div>
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>Postgresql</h2>
               </div>
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>React</h2>
               </div>
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>Visual Studio</h2>
               </div>
 
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>ASP.NET</h2>
               </div>
 
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>AWS</h2>
               </div>
 
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>Nginx</h2>
               </div>
 
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>C#</h2>
               </div>
 
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>.NET</h2>
               </div>
 
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>Google Clound</h2>
               </div>
 
-              <div className="service-tec-single">
+              <div className="service-tec-single paralax">
                 <h2>Typescript</h2>
               </div>
             </div>
