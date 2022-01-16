@@ -34,7 +34,7 @@ export default function Footer() {
             </ul>
             <ul>
               <h4>Links</h4>
-              <li><Link to="/">Inicio</Link></li>
+              <li><Link onClick={()=>autoScroll('inicio')} to="/">Inicio</Link></li>
               <li><Link onClick={()=>autoScroll("sobre")} to="">Agência</Link></li>
               <li><p className="p-link" onClick={()=>autoScroll("contato")}>Contato</p></li>
             </ul>

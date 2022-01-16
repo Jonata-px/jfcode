@@ -23,7 +23,9 @@ export default function Marketing() {
                   <p>Nos oferecemos este serviço para você, utilizaremos as melhores estratégias e pouparemos da melhor forma o seu dinheiro.</p>
                 </div>
               </div>
-              <img src={Banner} alt="Hospedagem e domínio" className="paralax-left" />
+              <div className="img-wrap paralax-left">
+                <img src={Banner} alt="Marketing e tráfego" />
+              </div>
             </div>
           </div>
           

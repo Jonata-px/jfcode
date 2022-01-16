@@ -25,7 +25,9 @@ export default function Hospedagem() {
                   <p>desenvolveu sua solução com a gente? Você ganha um domínio gratuito. <span>Somente para clientes que desenvolveram com a gente.</span></p>
                 </div>
               </div>
-              <img src={Banner} alt="Hospedagem e domínio" className="paralax-left" />
+              <div className="img-wrap paralax-left">
+                <img src={Banner} alt="Hospedagem e domínio" />
+              </div>
             </div>
           </div>
           <div className="service-tec">

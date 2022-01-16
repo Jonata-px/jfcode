@@ -4,7 +4,9 @@ export default function AboutUs() {
     return (
       <section className="sobre">
         <div id="sobre" className="container">
-          <img src={BackSobre} alt="" className="paralax-right"/>
+          <div className="img-wrap paralax-right">
+            <img src={BackSobre} alt="" />
+          </div>
           <article className="sobre-wrap paralax-left">
             <h1>Quem somos?</h1>
             <p>Somos uma startup com experiência em programação,

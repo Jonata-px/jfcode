@@ -27,6 +27,7 @@ export default function Header() {
     let timer = setInterval(()=>{
       let el = document.getElementById(to); 
       if(el !== undefined){
+        body.scrollTop = body.scrollTop + 1;
         window.scrollTo(0,el.offsetTop);
         clearInterval(timer);
       }
@@ -97,17 +98,17 @@ export default function Header() {
   }
 
     return (
-      <header>
+      <header id="inicio">
         <div className="container">
           <nav>
             <div className="menu-ico"><CgMenu onClick={()=>openMenu()}/></div>
             <div className="logo">
-              <Link to="/"><img src={Logo} title="jfcode" alt="logo"/></Link>
+              <Link onClick={()=>autoScroll('inicio')} to="/"><img src={Logo} title="jfcode" alt="logo"/></Link>
             </div>
             <ul className="menu">
-              <li><Link to="/">Início</Link></li>
-              <li><Link onClick={()=>autoScroll('technologies')} to="">Soluções</Link></li>
-              <li><Link onClick={()=>autoScroll("servicos")} to="">Serviços</Link></li>
+              <li><Link onClick={()=>autoScroll('inicio')} to="/">Início</Link></li>
+              <li><Link onClick={()=>autoScroll('technologies')} to="/">Soluções</Link></li>
+              <li><Link onClick={()=>autoScroll("servicos")} to="/">Serviços</Link></li>
               <li><p className="p-link" onClick={()=>autoScroll("contato")} id="header-contato">Contato</p></li>
             </ul>
             <div className="whatsApp">

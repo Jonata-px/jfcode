@@ -23,7 +23,9 @@ export default function Contrato() {
                   <p>Para a sua maior segurança, trabalhamos sob contrato, podendo ser assinado digitalmente.</p>
                 </div>
               </div>
-              <img src={Banner} alt="Hospedagem e domínio" className="paralax-left" />
+              <div className="img-wrap paralax-left">
+                <img src={Banner} alt="Pagamento e contrato" />
+              </div>
             </div>
           </div>
          

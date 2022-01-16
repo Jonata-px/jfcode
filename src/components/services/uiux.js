@@ -23,7 +23,9 @@ export default function UiUx() {
                   <p>Deixaremos tudo que for necessário para você trabalhar diretamente em suas mãos, sob medida e com fluidez.</p>
                 </div>
               </div>
-              <img src={Banner} alt="Hospedagem e domínio" className="paralax-left" />
+              <div className="img-wrap paralax-left">
+                <img src={Banner} alt="UI/UX" />
+              </div>
             </div>
           </div>
           <div className="service-tec">

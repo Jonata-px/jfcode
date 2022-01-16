@@ -23,7 +23,9 @@ export default function Software() {
                   <p>Desenvolvemos as melhores soluções para todos os sistemas operacionais (Windows | Linux | Mac)</p>
                 </div>
               </div>
-              <img src={Banner} alt="Hospedagem e domínio" className="paralax-left" />
+              <div className="img-wrap paralax-left">
+                <img src={Banner} alt="Desenvolvimento de software" />
+              </div>
             </div>
           </div>
           <div className="service-tec">

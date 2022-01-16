@@ -19,7 +19,7 @@
 
 .banner-img img{
     width: 100%;
-    max-width:300px;    
+    max-width:350px;    
 }
 
 .banner-text h3{
@@ -190,12 +190,8 @@
 
 .sobre .container{
     display:flex;
-    align-items:center;
-}
 
-.sobre img{
-    width:50%;
-    height: auto;
+    align-items:stretch;
 }
 
 .sobre-wrap{
@@ -347,7 +343,7 @@
     align-items:center;
 }
 
-.service-info-wrap > img{
+.service-info-wrap .img-wrap img{
     max-width: 330px;
 }
 
@@ -488,7 +484,7 @@
         flex-wrap: wrap;
     }
 
-    .service-info-wrap > img{
+    .service-info-wrap .img-wrap img{
         max-width: 280px;
     }
 
@@ -510,9 +506,9 @@
     }
     
     .banner-img{
-        padding-left: 30px;
+        padding-left: 0;
         margin: 10px auto;
-        width: 50%;
+        width: 60%;
     }
 
     .banner-text p{
@@ -539,12 +535,6 @@
     .sobre .container{
         flex-wrap: wrap;
         justify-content:center;
-    }
-
-    .sobre img{
-        width:100%;
-        height: auto;
-        max-width: 500px;
     }
     
     .sobre-wrap{

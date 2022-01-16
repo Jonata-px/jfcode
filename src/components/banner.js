@@ -15,7 +15,7 @@ export default function Banner() {
               <button onClick={()=>document.getElementById('header-contato').click()} >Entrar em Contato</button>
             </div>
           </div>
-          <div className="banner-img paralax-left">
+          <div className="banner-img img-wrap paralax-left">
             <img src={BannerImg} alt="banner" />
           </div>
           

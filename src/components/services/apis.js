@@ -23,7 +23,9 @@ export default function Apis() {
                   <p>Precisa integrar sua plataforma com soluções externas? Deixe com a gente!</p>
                 </div>
               </div>
-              <img src={Banner} alt="Hospedagem e domínio" className="paralax-left" />
+              <div className="img-wrap paralax-left">
+                <img src={Banner} alt="Integrações e API's" />
+              </div>
             </div>
           </div>
           <div className="service-tec">
