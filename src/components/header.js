@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 import {FaWhatsapp} from 'react-icons/fa';
 import {CgMenu} from 'react-icons/cg';
-import Logo from '../public/Icons/jf2.png';
+import Logo from '../public/images/jf-transparent.png';
 import {useEffect} from 'react';
 
 export default function Header() {
@@ -48,6 +48,11 @@ export default function Header() {
       var paralaxR = document.querySelectorAll('.paralax-right');
       var alturaJanela = body.offsetHeight;
       var alturaScroll = body.scrollTop;
+      if(alturaScroll > 10 && window.innerWidth > '768'){
+        document.querySelector('header').style.backgroundImage = 'linear-gradient(#eef0fd 5%,rgb(250, 250, 250))';
+      }else{
+        document.querySelector('header').style.backgroundImage = 'linear-gradient(#eef0fd 5%,white)';
+      }
       if(typeof paralaxB === 'object'){
         paralaxB.forEach(async(val,index)=>{
           var alturaDiv = paralaxB[index].offsetHeight;
@@ -98,25 +103,28 @@ export default function Header() {
   }
 
     return (
-      <header id="inicio">
-        <div className="container">
-          <nav>
-            <div className="menu-ico"><CgMenu onClick={()=>openMenu()}/></div>
-            <div className="logo">
-              <Link onClick={()=>autoScroll('inicio')} to="/"><img src={Logo} title="jfcode" alt="logo"/></Link>
-            </div>
-            <ul className="menu">
-              <li><Link onClick={()=>autoScroll('inicio')} to="/">Início</Link></li>
-              <li><Link onClick={()=>autoScroll('technologies')} to="/">Soluções</Link></li>
-              <li><Link onClick={()=>autoScroll("servicos")} to="/">Serviços</Link></li>
-              <li><p className="p-link" onClick={()=>autoScroll("contato")} id="header-contato">Contato</p></li>
-            </ul>
-            <div className="whatsApp">
-              <a href="https://api.whatsapp.com/send?phone=556484253732&text=Olá, gostaria de fazer um orçamento " title="WhatsApp" ><FaWhatsapp /> WhatsApp</a>
-            </div>
-          </nav>
-        </div>
-      </header>
+      <>
+      <div className="header-placeholder"></div>
+        <header id="inicio">
+          <div className="container">
+            <nav>
+              <div className="menu-ico"><CgMenu onClick={()=>openMenu()}/></div>
+              <div className="logo">
+                <Link onClick={()=>autoScroll('inicio')} to="/"><img src={Logo} title="jfcode" alt="logo"/></Link>
+              </div>
+              <ul className="menu">
+                <li><Link onClick={()=>autoScroll('inicio')} to="/">Início</Link></li>
+                <li><Link onClick={()=>autoScroll('technologies')} to="/">Soluções</Link></li>
+                <li><Link onClick={()=>autoScroll("servicos")} to="/">Serviços</Link></li>
+                <li><p className="p-link" onClick={()=>autoScroll("contato")} id="header-contato">Contato</p></li>
+              </ul>
+              <div className="whatsApp">
+                <a href="https://api.whatsapp.com/send?phone=556484253732&text=Olá, gostaria de fazer um orçamento " title="WhatsApp" ><FaWhatsapp /> WhatsApp</a>
+              </div>
+            </nav>
+          </div>
+        </header>
+      </>
     );
   }
   

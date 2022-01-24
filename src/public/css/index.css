@@ -30,11 +30,12 @@
   --var-font-title:30px;
   --var-font-subtitle:19px;
   --var-color-title:#1a2148;
-  --var-color-sessao:#7292F2;
+  --var-color-sessao:#576ef2;
   --var-color-p:#969696;
   --var-color-p2:#6d6d6d;
   --var-color-destaque:#ff6347;
-  --color-hover:#7292F2;
+  --color-hover:#576ef2;
+  --back-color-header:#eef0fd;
 }
 
 html, body{
@@ -148,13 +149,22 @@ img{
 /* HEADER */
 
 header{
-  margin-bottom: 50px;
+  background-image: linear-gradient(rgb(247, 242, 242),white);
+  position: fixed;
+  width: 100%;
+  left:0;
+  top: 0;
+  z-index: 9;
+}
+
+.header-placeholder{
+  width: 100%;
+  height: 90px;
 }
 
 header nav{
   display:flex;
   justify-content:space-between;
-  padding:10px 0;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -167,17 +177,11 @@ header .menu-ico{
 
 header .menu-ico svg{
   cursor: pointer;
-  color:#0c2091;
 }
 
-header .logo{
-  width: 60px;
-}
 
 header .logo img, footer .logo img{
-  background-color: #576ef2;
-  padding:5px;
-  width: 60px;
+  width: 90px;
   border-radius:50%;
   max-width:none;
 }
@@ -189,7 +193,7 @@ ul.menu{
 
 .menu li{
   margin-left: 40px;
-  padding:3px 5px;
+  padding:0 5px;
   font-size: 17px;
 }
 
@@ -201,7 +205,7 @@ ul.menu{
 
 .menu li a:hover, .menu li p:hover{
   transition: 0.2s;
-  color: var(--color-hover);
+  color: var(--var-color-destaque);
 }
 
 .whatsApp a{
@@ -245,8 +249,9 @@ footer .container{
 }
 
 footer .logo img{
-  width: 120px;
+  width: 150px !important;
   margin: 0px;
+  /* background-color: white; */
 }
 
 footer nav{
@@ -350,7 +355,13 @@ footer small{
 
   
   header{
+    background-image: linear-gradient(rgb(247, 242, 242),white);
+    position: initial;
     margin-bottom: 35px;
+  }
+
+  .header-placeholder{
+    height: 0;
   }
 
   header .menu-ico{
@@ -361,9 +372,11 @@ footer small{
     text-align:center;
   }
 
-  header .logo img{
-    width: 50px;
-    margin:0 auto;
+  header .logo img, footer .logo img{
+    padding:5px;
+    width: 80px;
+    border-radius:50%;
+    max-width:none;
   }
 
   .whatsApp a{
@@ -443,6 +456,12 @@ footer small{
     width: 50%;
     padding-left: 0;
     margin:10px auto;
+  }
+
+  footer .logo img{
+    width: 120px !important;
+    margin: 0px;
+    /* background-color: white; */
   }
 }
 

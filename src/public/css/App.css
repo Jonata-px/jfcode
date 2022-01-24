@@ -141,12 +141,17 @@
 }
 
 #technologies .swiper .swiper-button-next, #technologies .swiper .swiper-button-prev{
-    /* height: 100%; */
     background-color: white;
     width: 60px;
     padding: 70px 0;
     right: 0;
     transform: translateY(-35%);
+    cursor:auto;
+    outline: 0;
+}
+
+#technologies .swiper .swiper-button-next, #technologies .swiper .swiper-button-prev:focus{
+    background-color:white;
 }
 
 #technologies .swiper .swiper-button-prev{
@@ -155,20 +160,21 @@
 
 #technologies .swiper .swiper-button-next::after{
     content: "";
-    padding:15px;
+    padding:20px;
     background-image: url('../Icons/next.png');
     background-repeat: no-repeat;
     background-position:center;
     background-size:cover;
-    right: -15px;
+    right: -20px;
     top: 50%;
     position: absolute;
-    transform:translate(-50%,-50%)
+    transform:translate(-50%,-50%);
+    cursor: pointer;
 }
 
 #technologies .swiper .swiper-button-prev::after{
     content: "";
-    padding:15px;
+    padding:20px;
     background-image: url('../Icons/back.png');
     background-repeat: no-repeat;
     background-position:center;
@@ -176,10 +182,11 @@
     background-repeat: no-repeat;
     background-position:center;
     background-size:cover;
-    left: 15px;
+    left: 20px;
     top: 50%;
     position: absolute;
-    transform:translate(-50%,-50%)
+    transform:translate(-50%,-50%);
+    cursor: pointer;
 }
 
 /* SOBRE */

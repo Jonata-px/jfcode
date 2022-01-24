@@ -37,21 +37,21 @@ export default function Technologies() {
   useEffect(()=>{
     setTechnologies([
       IcoApache,
+      IcoAws,
+      IcoGoogleCloud,
       IcoJs,
+      IconReact,
+      IcoNode,
+      IcoSocketIo,
       IcoMongodb,
       IcoMySql,
-      IcoNode,
       IcoPostgresql,
-      IconReact,
-      IcoSocketIo,
-      IcoVisualStudio,
-      IcoAspnet,
-      IcoAws,
-      IcoNginx,
       IcoCsharp,
+      IcoAspnet,
       IcoDotnet,
-      IcoGoogleCloud,
+      IcoNginx,
       IcoTypescript,
+      IcoVisualStudio,
     ]);
   },[]);
 

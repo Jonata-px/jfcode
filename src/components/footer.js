@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom';
 import {FaMapMarkerAlt, FaEnvelope, FaPhoneAlt} from 'react-icons/fa';
-import Logo from '../public/Icons/jf2.png';
+import Logo from '../public/images/jf-transparent.png';
 
 export default function Footer() {
 
