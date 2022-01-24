@@ -30,11 +30,12 @@
   --var-font-title:30px;
   --var-font-subtitle:19px;
   --var-color-title:#1a2148;
-  --var-color-sessao:#576ef2;
+  --var-color-sessao:#7292f2;
   --var-color-p:#969696;
   --var-color-p2:#6d6d6d;
   --var-color-destaque:#ff6347;
   --color-hover:#576ef2;
+  --color-footer:#576ef2;
   --back-color-header:#eef0fd;
 }
 
@@ -236,7 +237,7 @@ ul.menu{
 /* FOOTER */
 
 footer{
-  background-color: #576ef2;
+  background-color: var(--var-color-footer);
   padding:40px 0 10px 0;
   color:white;
 }
